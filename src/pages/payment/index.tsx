@@ -18,22 +18,22 @@ export const Payment = () =>{
                 <p className="container__payment--thePayment">This payment is for the PS5 purchase in our <span className="container__payment--span">store earlier today</span></p>
             </div>
 
-            <div>
+            <div className="container__middle">
                 <div className="container__input1">
-                <RavenInputField label="First Name" placeholder="Eg, 'Abigail'" className="container__theInput" color="black-light"/>
-                <RavenInputField label="Last Name" placeholder="Eg, 'Godwin'" className="container__theInput" color="black-light"/>
+                <RavenInputField label="First Name" labelColor="black-light" placeholder="Eg, 'Abigail'" className="container__input1--theInput" color="black-light"/>
+                <RavenInputField label="Last Name" placeholder="Eg, 'Godwin'" className="container__input1theInput" color="black-light"/>
                 </div>
                 <div className="container__input2">
                 <RavenInputField label="Email Address" placeholder="Eg, 'yourname@gmail.com'" color="black-light"/>
-                <RavenInputField label="Amount" placeholder="5000,000,00'" type="number"/>
+                <RavenInputField label="Amount" placeholder="5000,000,00'" type="number" color="black-light"/>
                 </div>
                 <div className="container__input3">
-                <RavenInputField value="Pay NGN 5000,000,00"/>
+                <RavenInputField  className="container__footer--submit" value="Pay NGN 5000,000.00" color="deep-green-light" type="submit"/>
                 </div>
             </div>
            </div>
            <div className="container__footer">
-            <p>Raven Bank: <span>The peoples bank of Africa</span></p>
+            <p style={{fontSize:"1,4rem",fontWeight:600,color:"#0B8376"}}>Raven Bank: <span style={{fontSize:"1,4rem",fontWeight:400,color:"#0B8376"}}>The peoples bank of Africa</span></p>
             <img style={{width:"10.7rem", height:"3.3rem"}} className="container__footer--images" src={image1} alt="google"/>
             <img  style={{width:"10.7rem", height:"3.3rem"}} src={image2} alt="appStore" className="container__footer--images"/>
            </div>
